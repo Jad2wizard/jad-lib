@@ -1,8 +1,9 @@
 const num2Chinese = require('./lib/num2Chinese')
-const {debounce, throttle} = require('./lib/utils')
+const utils = require('./lib/utils')
+const is = require('./lib/is')
 
 module.exports = {
     num2Chinese,
-    debounce,
-    throttle
+    utils,
+    is
 }

@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Jad2wizard/jad-lib#readme",
   "dependencies": {
     "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.2"
   }
 }
