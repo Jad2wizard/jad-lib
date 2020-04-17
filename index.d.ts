@@ -1,8 +1,12 @@
 declare module 'jadwizard-lib' {
 	export function num2Chinese(num: number | string): string
 	export module utils {
-		export function debounce<T extends (...args: any[]) => any>(fn: T): T
-		export function throttle<T extends (...args: any[]) => any>(fn: T): T
+		export function debounce<
+			T extends (this: any, ...args: any[]) => ReturnType<T>
+		>(fn: T, delay: number): T
+		export function throttle<
+			T extends (this: any, ...args: any[]) => ReturnType<T>
+		>(fn: T, delay: number): T
 	}
 	export module math {
 		export function sum(v: number[]): number
